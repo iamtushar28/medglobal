@@ -26,12 +26,12 @@ const Hero = (props: Props) => {
             <div className="absolute inset-0 z-10 bg-linear-to-r from-white via-white/80 to-transparent" />
 
             {/* Optional: Content area */}
-            <div className="relative z-20 h-full w-full pt-20 flex items-center px-12">
+            <div className="relative z-20 h-full w-full pt-12 md:pt-20 flex items-center md:items-end justify-around px-4 md:px-12">
 
-                <div className="max-w-[50%] flex flex-col gap-5">
+                <div className="w-full lg:max-w-[50%] md:py-10 flex flex-col gap-5">
 
                     {/* sub heading */}
-                    <div className='max-w-fit px-4 py-1 text-white bg-linear-to-r from-blue-700 to-blue-500 rounded-full'>
+                    <div className='max-w-fit px-4 py-1 text-sm md:text-base text-white bg-linear-to-r from-blue-700 to-blue-500 rounded-full'>
                         <p>Your Gateway to MBBS Abroad</p>
                     </div>
 
@@ -58,19 +58,19 @@ const Hero = (props: Props) => {
                             <div className='h-8 w-8 bg-blue-500 rounded-full flex justify-center items-center'>
                                 <IoShieldCheckmarkSharp size={18} color='#ffffff' />
                             </div>
-                            <p className='text-lg font-semibold'>MCI/NMC Approved Universities</p>
+                            <p className='md:text-lg font-semibold'>MCI/NMC Approved Universities</p>
                         </div>
                         <div className='flex gap-2 items-center'>
                             <div className='h-8 w-8 bg-blue-500 rounded-full flex justify-center items-center'>
                                 <MdOutlineCurrencyRupee size={18} color='#ffffff' />
                             </div>
-                            <p className='text-lg font-semibold'>Affordable Fees</p>
+                            <p className='md:text-lg font-semibold'>Affordable Fees</p>
                         </div>
                         <div className='flex gap-2 items-center'>
                             <div className='h-8 w-8 bg-blue-500 rounded-full flex justify-center items-center'>
                                 <BiSupport size={18} color='#ffffff' />
                             </div>
-                            <p className='text-lg font-semibold'>Complete Admission Support</p>
+                            <p className='md:text-lg font-semibold'>Complete Admission Support</p>
                         </div>
 
                     </div>
@@ -89,12 +89,12 @@ const Hero = (props: Props) => {
                     alt="mbbs students"
                     height={400}
                     width={400}
-                    className="object-cover h-124 w-auto absolute bottom-0 right-10"
+                    className="hidden md:block object-cover h-124 w-auto"
                     priority
                 />
 
                 {/* visuals */}
-                <div className='h-32 w-20 px-4 bg-white shadow-sm rounded-xl flex flex-col justify-center items-center absolute right-20 top-40'>
+                <div className='hidden md:flex h-32 w-20 px-4 bg-white shadow-sm rounded-xl flex-col justify-center items-center absolute right-20 top-40'>
                     {/* icon */}
                     <div className='h-10 w-10 text-2xl text-blue-600 flex justify-center items-center'>
                         <SlBadge />

@@ -6,7 +6,7 @@ type Props = {}
 const Whychooseus = (props: Props) => {
 
     return (
-        <div className='w-full flex flex-col gap-5 items-center'>
+        <div className='w-full flex flex-col gap-4 md:gap-5 items-center'>
 
             {/* title */}
             <div className='w-fit px-3 py-1 font-semibold text-blue-600 bg-blue-50 rounded-full'>
@@ -14,10 +14,10 @@ const Whychooseus = (props: Props) => {
             </div>
 
             {/* heading */}
-            <h2 className='text-3xl font-semibold'>Why Thousands of Students Choose Us?</h2>
+            <h2 className='text-3xl font-semibold text-center'>Why Thousands of Students Choose Us?</h2>
 
             {/* features */}
-            <div className='w-full flex gap-10 justify-center'>
+            <div className='w-full flex flex-wrap gap-6 md:gap-10 justify-center'>
 
                 {features.map((item, index) => (
                     <FeatureCard key={index} {...item} />

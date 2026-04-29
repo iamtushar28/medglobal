@@ -9,7 +9,7 @@ type StatItemProps = {
 
 export function StatItem({ icon: Icon, value, label }: StatItemProps) {
     return (
-        <div className="w-fit flex gap-2 items-center justify-center">
+        <div className="w-fit flex gap-4 md:gap-2 items-center justify-center">
 
             {/* icon */}
             <div className="h-12 w-12 text-2xl text-white bg-white/20 rounded-xl flex justify-center items-center">

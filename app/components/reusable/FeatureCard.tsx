@@ -19,7 +19,7 @@ export default function FeatureCard({
     lineColor,
 }: FeatureCardProps) {
     return (
-        <div className="w-48 h-52 p-4 bg-white shadow-sm rounded-xl flex flex-col gap-2 justify-center items-center hover:shadow-md transition">
+        <div className="w-full h-60 md:w-52 p-4 bg-white border border-zinc-100 shadow-sm rounded-xl flex flex-col gap-2 justify-center items-center transition relative">
 
             {/* icon */}
             <div
@@ -37,7 +37,7 @@ export default function FeatureCard({
             </p>
 
             {/* line */}
-            <div className={`w-12 h-1 ${lineColor} rounded-full`}></div>
+            <div className={`w-12 h-1 ${lineColor} rounded-full absolute bottom-6 md:bottom-3`}></div>
         </div>
     );
 }

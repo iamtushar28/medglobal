@@ -9,11 +9,12 @@ type Props = {}
 
 const Footer = (props: Props) => {
     return (
-        <div className='h-auto w-full py-8 text-white bg-blue-600 flex flex-col gap-6'>
+        <div className='h-auto w-full pb-22 md:pb-0 p-4 md:px-0 md:py-8 text-white bg-blue-600 flex flex-col gap-6'>
 
-            <div className='w-full flex justify-around'>
+            <div className='w-full flex flex-col gap-6 md:gap-0 md:flex-row justify-around'>
+
                 {/* company info */}
-                <div className='w-[25%] flex flex-col gap-2'>
+                <div className='w-full md:w-[25%] flex flex-col gap-2'>
 
                     {/* logo */}
                     <Image
@@ -105,7 +106,7 @@ const Footer = (props: Props) => {
                 </div>
 
                 {/* subscribe */}
-                <div className='w-[25%] flex flex-col gap-4'>
+                <div className='hidden w-[25%] md:flex flex-col gap-4'>
 
                     {/* title */}
                     <h4 className='font-semibold'>Stay in the Loop</h4>
@@ -127,12 +128,12 @@ const Footer = (props: Props) => {
             </div>
 
             {/* copywrite scetion */}
-            <div className='py-3 mx-8 text-sm text-white/90 border-t border-white/60 flex items-center justify-between'>
+            <div className='py-3 md:mx-8 text-sm text-white/90 border-t border-white/60 flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between'>
                 <p>
                     2026 Med Global Education (A Unit of Mahajan Education LLP). All Rights Reserved.
                 </p>
 
-                <div className='flex gap-4'>
+                <div className='flex gap-6 md:gap-4'>
                     <p>Privacy Policy</p>
                     <p>Terms & Conditions</p>
                 </div>

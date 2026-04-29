@@ -32,16 +32,16 @@ export default function Home() {
       <Footer />
 
       {/* talk to expert */}
-      <div className='w-44 h-14 pl-2 bg-white hover:bg-zinc-50 shadow border border-zinc-100 flex gap-2 justify-start items-center fixed bottom-10 right-0 z-40 rounded-l-full cursor-pointer'>
+      <div className='w-36 md:w-44 h-12 md:h-14 pl-2 bg-white hover:bg-zinc-50 shadow border border-zinc-100 flex md:gap-2 justify-start items-center fixed bottom-6 md:bottom-10 right-0 z-40 rounded-l-full cursor-pointer'>
 
         {/* icon */}
-        <div className='h-10 w-10 text-3xl text-green-500 flex justify-center items-center'>
+        <div className='h-10 w-10 text-2xl md:text-3xl text-green-500 flex justify-center items-center'>
           <IoLogoWhatsapp />
         </div>
 
         <div>
-          <h4 className='text-sm text-zinc-600'>Chat With</h4>
-          <h4 className='-mt-1 font-semibold'>Our Experts</h4>
+          <h4 className='text-xs md:text-sm text-zinc-600'>Chat With</h4>
+          <h4 className='-mt-1 text-sm font-semibold'>Our Experts</h4>
         </div>
 
       </div>

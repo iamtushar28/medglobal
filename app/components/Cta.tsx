@@ -10,7 +10,7 @@ const Cta = () => {
     if (!visible) return null; // 👈 hides component completely
 
     return (
-        <div className="h-14 w-full text-white bg-linear-to-r from-blue-500 to-indigo-500 flex gap-4 justify-center items-center relative">
+        <div className="hidden md:flex h-14 w-full text-white bg-linear-to-r from-blue-500 to-indigo-500 gap-4 justify-center items-center relative">
 
             <p>
                 👉 Register Now - Start Your MBBS Journey Today!

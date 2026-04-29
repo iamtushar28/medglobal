@@ -15,7 +15,7 @@ export default function ReviewCard({
     image,
 }: ReviewCardProps) {
     return (
-        <div className="h-56 w-80 p-4 border border-zinc-100 rounded-xl flex flex-col justify-between hover:shadow-md transition duration-300 cursor-pointer">
+        <div className="h-56 w-80 p-4 border border-zinc-200 rounded-xl flex flex-col justify-between hover:shadow-md transition duration-300 cursor-pointer">
 
             {/* icon */}
             <div className="h-8 w-8 text-3xl text-blue-600 flex justify-center items-center">

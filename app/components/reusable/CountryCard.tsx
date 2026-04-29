@@ -14,7 +14,7 @@ export default function CountryCard({
     description,
 }: CountryCardProps) {
     return (
-        <div className="w-56 h-64 bg-white shadow-sm rounded-xl flex flex-col overflow-hidden hover:shadow-md transition">
+        <div className="w-full h-96 md:w-56 md:h-64 bg-white shadow-sm rounded-xl flex flex-col overflow-hidden hover:shadow-md transition">
 
             {/* country image */}
             <div className="h-[45%] w-full bg-zinc-100">
@@ -27,12 +27,12 @@ export default function CountryCard({
                 />
             </div>
 
-            <div className="h-[58%] mt-[-3%] w-full p-2 rounded-t-lg bg-white">
+            <div className="h-[58%] mt-[-3%] w-full p-4 md:p-2 rounded-t-lg bg-white">
 
                 <div className="flex items-center gap-2">
 
                     {/* flag */}
-                    <div className="h-10 w-10 -mt-7 bg-zinc-200 rounded-full overflow-hidden">
+                    <div className="h-12 w-12 md:h-10 md:w-10 -mt-12 bg-zinc-200 rounded-full overflow-hidden">
                         <Image
                             src={flagImage}
                             alt={name}
@@ -47,7 +47,7 @@ export default function CountryCard({
                 </div>
 
                 {/* description */}
-                <p className="px-3 text-sm text-zinc-600 line-clamp-3">
+                <p className="px-3 text-sm text-zinc-600 line-clamp-6 md:line-clamp-3">
                     {description}
                 </p>
 

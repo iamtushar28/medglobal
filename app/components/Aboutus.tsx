@@ -19,7 +19,7 @@ const FeatureCard = ({
     title2,
 }: Feature) => {
     return (
-        <div className="w-28 h-32 bg-white shadow-sm rounded-2xl flex flex-col gap-3 justify-center items-center hover:shadow-md transition">
+        <div className="w-36 h-36 md:w-28 md:h-32 bg-white shadow-sm rounded-2xl flex flex-col gap-3 justify-center items-center hover:shadow-md transition">
             <Icon className="text-3xl text-blue-500" />
 
             <div className="text-center">
@@ -57,10 +57,10 @@ const Aboutus = () => {
     ];
 
     return (
-        <div className="h-auto w-full px-12 flex gap-8">
+        <div className="h-auto w-full md:px-12 flex flex-col-reverse md:flex-row gap-6 md:gap-8">
 
             {/* image */}
-            <div className="w-[42%] overflow-hidden rounded-2xl">
+            <div className="w-full md:w-[42%] overflow-hidden rounded-2xl">
                 <Image
                     src={"/images/about.png"}
                     alt="about us"
@@ -89,7 +89,7 @@ const Aboutus = () => {
                 </p>
 
                 {/* features */}
-                <div className="flex gap-5 flex-wrap">
+                <div className="flex gap-4 flex-wrap justify-center items-center">
                     {features.map((item, index) => (
                         <FeatureCard key={index} {...item} />
                     ))}

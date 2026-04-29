@@ -19,7 +19,7 @@ const Navbar = (props: Props) => {
             />
 
             {/* navigation page links */}
-            <div className='w-fit flex items-center gap-4'>
+            <div className='w-fit flex items-center gap-4 hidden'>
 
                 <Link href={'/'} className='hover:text-blue-600 cursor-pointer transition-all duration-300'>About Us</Link>
 
