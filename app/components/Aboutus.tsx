@@ -8,13 +8,13 @@ type Props = {}
 
 const Aboutus = (props: Props) => {
     return (
-        <div className='h-auto w-full px-12 py-10 flex gap-6'>
+        <div className='h-auto w-full px-12 flex gap-6'>
 
             {/* visual image */}
             <div className='h-60 w-[40%] border border-zinc-100'></div>
 
             {/* main section */}
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-4'>
 
                 {/* title */}
                 <div className='w-fit px-3 py-1 font-semibold text-blue-600 bg-blue-50 rounded-full'>

@@ -9,14 +9,14 @@ type Props = {}
 
 const Hero = (props: Props) => {
     return (
-        <div className="relative h-screen w-full overflow-hidden rounded-b-">
+        <div className="relative h-screen w-full pt-12 overflow-hidden rounded-b-">
 
             {/* Background Image */}
             <Image
                 src="/images/mbbscollege.png"
                 alt="mbbs college in russia"
                 fill
-                className="object-cover object-top mt-6"
+                className="object-cover object-top pt-12"
                 priority
             />
 
@@ -71,7 +71,7 @@ const Hero = (props: Props) => {
                     </div>
 
                     {/* CTA */}
-                    <button className='w-fit px-6 py-2 text-lg font-semibold text-white bg-blue-600 rounded-full flex gap-3 items-center'>
+                    <button className='w-fit px-6 py-2 text-lg font-semibold text-white bg-blue-600 rounded-lg flex gap-3 items-center'>
                         Register Now
                         <FaArrowRightLong size={18} color='#ffffff' />
                     </button>
@@ -79,16 +79,33 @@ const Hero = (props: Props) => {
                 </div>
 
                 {/* mbbs students image */}
-                <div>
+                <Image
+                    src="/images/students.png"
+                    alt="mbbs students"
+                    height={400}
+                    width={400}
+                    className="object-cover h-124 w-auto absolute bottom-0 right-10"
+                    priority
+                />
 
-                    <Image
-                        src="/images/students.png"
-                        alt="mbbs students"
-                        height={400}
-                        width={400}
-                        className="object-cover h-124 w-auto absolute bottom-0 right-10"
-                        priority
-                    />
+                {/* visuals */}
+                <div className='h-32 w-20 px-4 bg-white shadow-sm rounded-xl flex flex-col justify-center items-center absolute right-20 top-40'>
+                    {/* icon */}
+                    <div className='h-10 w-10 bg-blue-50 rounded-full'></div>
+                    <h4 className='text-xl font-semibold text-blue-500'>4+</h4>
+                    <p className='text-xs text-zinc-600 text-center'>Years of Experience</p>
+                </div>
+
+                {/* talk to expert */}
+                <div className='w-44 h-14 pl-2 bg-white flex gap-2 justify-start items-center absolute bottom-10 right-0 rounded-l-full'>
+
+                    {/* icon */}
+                    <div className='h-10 w-10 bg-blue-50 rounded-full'></div>
+
+                    <div>
+                        <h4 className='text-sm text-zinc-600'>Chat With</h4>
+                        <h4 className='-mt-1 font-semibold'>Our Experts</h4>
+                    </div>
 
                 </div>
 

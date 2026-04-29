@@ -4,7 +4,8 @@ type Props = {}
 
 const Whychooseus = (props: Props) => {
     return (
-        <div className='w-full py-10 flex flex-col gap-6 items-center'>
+        <div className='w-full flex flex-col gap-5 items-center'>
+
             {/* title */}
             <div className='w-fit px-3 py-1 font-semibold text-blue-600 bg-blue-50 rounded-full'>
                 Why Choose Us
