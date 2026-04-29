@@ -9,6 +9,7 @@ import Contactus from "./components/Contactus";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 import Cta from "./components/Cta";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -29,6 +30,21 @@ export default function Home() {
         <Contactus />
       </div>
       <Footer />
+
+      {/* talk to expert */}
+      <div className='w-44 h-14 pl-2 bg-white hover:bg-zinc-50 shadow border border-zinc-100 flex gap-2 justify-start items-center fixed bottom-10 right-0 z-40 rounded-l-full cursor-pointer'>
+
+        {/* icon */}
+        <div className='h-10 w-10 text-3xl text-green-500 flex justify-center items-center'>
+          <IoLogoWhatsapp />
+        </div>
+
+        <div>
+          <h4 className='text-sm text-zinc-600'>Chat With</h4>
+          <h4 className='-mt-1 font-semibold'>Our Experts</h4>
+        </div>
+
+      </div>
     </>
   );
 }

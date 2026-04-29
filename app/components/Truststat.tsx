@@ -1,4 +1,5 @@
-import React from 'react'
+import { StatItem } from './reusable/StatItem'
+import { stats } from '../data/stats'
 
 type Props = {}
 
@@ -14,70 +15,9 @@ const Truststat = (props: Props) => {
             {/* stats */}
             <div className='flex justify-between'>
 
-                {/* card */}
-                <div className='w-fit flex gap-2 items-center justify-center'>
-
-                    {/* icon */}
-                    <div className='h-12 w-12 bg-white/20 rounded-xl'></div>
-
-                    <div>
-                        <h3 className='text-xl font-semibold text-white'>350+</h3>
-                        <p className='-mt-1 text-white'>Partner Universities</p>
-                    </div>
-
-                </div>
-
-                {/* card */}
-                <div className='w-fit flex gap-2 items-center justify-center'>
-
-                    {/* icon */}
-                    <div className='h-12 w-12 bg-white/20 rounded-xl'></div>
-
-                    <div>
-                        <h3 className='text-xl font-semibold text-white'>15,000+</h3>
-                        <p className='-mt-1 text-white'>Students Enrolled</p>
-                    </div>
-
-                </div>
-
-                {/* card */}
-                <div className='w-fit flex gap-2 items-center justify-center'>
-
-                    {/* icon */}
-                    <div className='h-12 w-12 bg-white/20 rounded-xl'></div>
-
-                    <div>
-                        <h3 className='text-xl font-semibold text-white'>4+</h3>
-                        <p className='-mt-1 text-white'>Years Experience</p>
-                    </div>
-
-                </div>
-
-                {/* card */}
-                <div className='w-fit flex gap-2 items-center justify-center'>
-
-                    {/* icon */}
-                    <div className='h-12 w-12 bg-white/20 rounded-xl'></div>
-
-                    <div>
-                        <h3 className='text-xl font-semibold text-white'>95%</h3>
-                        <p className='-mt-1 text-white'>Success Rate</p>
-                    </div>
-
-                </div>
-
-                {/* card */}
-                <div className='w-fit flex gap-2 items-center justify-center'>
-
-                    {/* icon */}
-                    <div className='h-12 w-12 bg-white/20 rounded-xl'></div>
-
-                    <div>
-                        <h3 className='text-xl font-semibold text-white'>24/7</h3>
-                        <p className='-mt-1 text-white'>Expert Support</p>
-                    </div>
-
-                </div>
+                {stats.map((item, index) => (
+                    <StatItem key={index} {...item} />
+                ))}
 
             </div>
 

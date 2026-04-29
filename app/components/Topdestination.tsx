@@ -1,4 +1,7 @@
+import Image from 'next/image'
 import React from 'react'
+import CountryCard from './reusable/CountryCard'
+import { countries } from '../data/countries'
 
 type Props = {}
 
@@ -16,30 +19,9 @@ const Topdestination = (props: Props) => {
             {/* features */}
             <div className='w-full flex gap-10 justify-center'>
 
-                <div className='w-52 h-60 bg-white shadow-sm rounded-xl flex flex-col overflow-hidden'>
-
-                    {/* country image */}
-                    <div className='h-[45%] w-full bg-zinc-100'></div>
-
-                    <div className='h-[58%] mt-[-3%] w-full p-2 rounded-t-lg bg-white'>
-
-                        <div className='flex items-center gap-2'>
-                            {/* country flag */}
-                            <div className='h-10 w-10 -mt-7 bg-zinc-200 rounded-full'></div>
-
-                            {/* country name */}
-                            <h4 className='text-lg font-semibold'>Russia</h4>
-
-                        </div>
-
-                        {/* about country */}
-                        <p className='px-3 text-sm text-zinc-600'>World class education with affordable fees and modern infrastructure.</p>
-
-                        {/* explore country */}
-                        <button className='px-3 py-2 text-sm text-blue-500'>Explore More</button>
-
-                    </div>
-                </div>
+                {countries.map((country) => (
+                    <CountryCard key={country.name} {...country} />
+                ))}
 
             </div>
 

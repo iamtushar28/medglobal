@@ -1,5 +1,9 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { FaFacebookSquare } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa6'
+import { IoLogoWhatsapp } from 'react-icons/io'
 
 type Props = {}
 
@@ -9,18 +13,32 @@ const Footer = (props: Props) => {
 
             <div className='w-full flex justify-around'>
                 {/* company info */}
-                <div className='w-[25%] flex flex-col gap-4'>
+                <div className='w-[25%] flex flex-col gap-2'>
 
                     {/* logo */}
-                    <h4 className='text-2xl font-semibold'>Med Global</h4>
+                    <Image
+                        src={'/images/logo/logowhite.png'}
+                        alt='med global education logo'
+                        width={220}
+                        height={80}
+                        priority
+                        className='h-auto w-52 object-contain mix-blend-lighten'
+                    />
+
                     <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ea qui minus fugit! Dolores, maxime. Dolorem.</p>
 
                     {/* social links */}
                     <div className='flex gap-3'>
 
-                        <div className='h-10 w-10 border border-white rounded-full'></div>
-                        <div className='h-10 w-10 border border-white rounded-full'></div>
-                        <div className='h-10 w-10 border border-white rounded-full'></div>
+                        <div className='h-10 w-10 text-3xl rounded-full flex justify-center items-center'>
+                            <IoLogoWhatsapp />
+                        </div>
+                        <div className='h-10 w-10 text-3xl rounded-full flex justify-center items-center'>
+                            <FaFacebookSquare />
+                        </div>
+                        <div className='h-10 w-10 text-3xl rounded-full flex justify-center items-center'>
+                            <FaLinkedin />
+                        </div>
 
                     </div>
 

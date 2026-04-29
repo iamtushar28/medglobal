@@ -4,6 +4,8 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { SlBadge } from "react-icons/sl";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 type Props = {}
 
@@ -36,7 +38,10 @@ const Hero = (props: Props) => {
                     {/* heading */}
                     <div>
                         <h1 className="text-6xl font-bold">
-                            Study <span className='text-blue-600'>MBBS</span>
+                            Study{" "}
+                            <span className="bg-linear-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
+                                MBBS
+                            </span>
                         </h1>
                         <h1 className="text-6xl font-bold">
                             Abroad Without
@@ -91,22 +96,11 @@ const Hero = (props: Props) => {
                 {/* visuals */}
                 <div className='h-32 w-20 px-4 bg-white shadow-sm rounded-xl flex flex-col justify-center items-center absolute right-20 top-40'>
                     {/* icon */}
-                    <div className='h-10 w-10 bg-blue-50 rounded-full'></div>
+                    <div className='h-10 w-10 text-2xl text-blue-600 flex justify-center items-center'>
+                        <SlBadge />
+                    </div>
                     <h4 className='text-xl font-semibold text-blue-500'>4+</h4>
                     <p className='text-xs text-zinc-600 text-center'>Years of Experience</p>
-                </div>
-
-                {/* talk to expert */}
-                <div className='w-44 h-14 pl-2 bg-white flex gap-2 justify-start items-center absolute bottom-10 right-0 rounded-l-full'>
-
-                    {/* icon */}
-                    <div className='h-10 w-10 bg-blue-50 rounded-full'></div>
-
-                    <div>
-                        <h4 className='text-sm text-zinc-600'>Chat With</h4>
-                        <h4 className='-mt-1 font-semibold'>Our Experts</h4>
-                    </div>
-
                 </div>
 
             </div>

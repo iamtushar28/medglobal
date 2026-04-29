@@ -1,4 +1,7 @@
 import React from 'react'
+import { IoLogoWhatsapp } from 'react-icons/io'
+import { IoLocationSharp } from 'react-icons/io5'
+import { MdSupportAgent } from 'react-icons/md'
 
 type Props = {}
 
@@ -21,7 +24,9 @@ const Contactus = (props: Props) => {
                 <div className='w-64 h-24 p-3 border border-zinc-200 rounded-xl flex gap-3 justify-start items-center'>
 
                     {/* icon */}
-                    <div className='min-h-10 min-w-10 bg-zinc-100 rounded-full'></div>
+                    <div className='min-h-10 min-w-10 text-3xl text-green-500 rounded-full flex justify-center items-center'>
+                        <IoLogoWhatsapp />
+                    </div>
 
                     {/* contact details */}
                     <div>
@@ -41,7 +46,9 @@ const Contactus = (props: Props) => {
                 <div className='w-80 h-24 p-3 border border-zinc-200 rounded-xl flex gap-3 justify-start items-center'>
 
                     {/* icon */}
-                    <div className='min-h-10 min-w-10 bg-zinc-100 rounded-full'></div>
+                    <div className='min-h-10 min-w-10 text-3xl text-blue-500 rounded-full flex justify-center items-center'>
+                        <MdSupportAgent />
+                    </div>
 
                     {/* contact details */}
                     <div>
@@ -61,7 +68,9 @@ const Contactus = (props: Props) => {
                 <div className='w-104 h-24 p-3 border border-zinc-200 rounded-xl flex gap-3 justify-start items-center'>
 
                     {/* icon */}
-                    <div className='min-h-10 min-w-10 bg-zinc-100 rounded-full'></div>
+                    <div className='min-h-10 min-w-10 text-3xl text-red-500 rounded-full flex justify-center items-center'>
+                        <IoLocationSharp />
+                    </div>
 
                     {/* contact details */}
                     <div>
