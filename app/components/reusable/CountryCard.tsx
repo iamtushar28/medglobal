@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-type CountryCardProps = {
+// CountryCard.tsx
+
+export type Country = {
     countryImage: string;
     flagImage: string;
     name: string;
@@ -12,7 +14,7 @@ export default function CountryCard({
     flagImage,
     name,
     description,
-}: CountryCardProps) {
+}: Country) {
     return (
         <div className="w-full h-96 md:w-56 md:h-64 bg-white shadow-sm rounded-xl flex flex-col overflow-hidden hover:shadow-md transition">
 
