@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 import { IoIosCall } from "react-icons/io";
+import { IoMenu } from 'react-icons/io5';
 type Props = {}
 
 const Navbar = (props: Props) => {
@@ -19,7 +20,7 @@ const Navbar = (props: Props) => {
             />
 
             {/* navigation page links */}
-            <div className='w-fit flex items-center gap-4 md:hidden'>
+            <div className='w-fit hidden md:flex items-center gap-4'>
 
                 <Link href={'/'} className='hover:text-blue-600 cursor-pointer transition-all duration-300'>About Us</Link>
 
@@ -42,6 +43,11 @@ const Navbar = (props: Props) => {
                 </Link>
 
             </div>
+
+            {/* mobile open menu button */}
+            <button className='md:hidden h-10 w-10 bg-zinc-50 rounded text-2xl flex justify-center items-center'>
+                <IoMenu />
+            </button>
 
         </nav>
     )

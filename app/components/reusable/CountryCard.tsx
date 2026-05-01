@@ -24,7 +24,7 @@ export default function CountryCard({
                     src={countryImage}
                     alt={name}
                     height={100}
-                    width={100}
+                    width={200}
                     className="h-full w-full object-cover object-center"
                 />
             </div>

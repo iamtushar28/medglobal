@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Aboutus from "./components/Aboutus";
@@ -10,6 +9,7 @@ import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 import Cta from "./components/Cta";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Mobilecta from "./components/Mobilecta";
 
 export default function Home() {
   return (
@@ -31,8 +31,10 @@ export default function Home() {
       </div>
       <Footer />
 
+      <Mobilecta />
+
       {/* talk to expert */}
-      <div className='w-36 md:w-44 h-12 md:h-14 pl-2 bg-white hover:bg-zinc-50 shadow border border-zinc-100 flex md:gap-2 justify-start items-center fixed bottom-6 md:bottom-10 right-0 z-40 rounded-l-full cursor-pointer'>
+      <div className='hidden md:flex w-36 md:w-44 h-12 md:h-14 pl-2 bg-white hover:bg-zinc-50 shadow border border-zinc-100 md:gap-2 justify-start items-center fixed bottom-6 md:bottom-10 right-0 z-40 rounded-l-full cursor-pointer'>
 
         {/* icon */}
         <div className='h-10 w-10 text-2xl md:text-3xl text-green-500 flex justify-center items-center'>
