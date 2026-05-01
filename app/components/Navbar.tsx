@@ -45,7 +45,7 @@ const Navbar = (props: Props) => {
             </div>
 
             {/* mobile open menu button */}
-            <button className='md:hidden h-10 w-10 bg-zinc-50 rounded text-2xl flex justify-center items-center'>
+            <button className='md:hidden h-10 w-10 bg-zinc-50 rounded-lg text-2xl flex justify-center items-center'>
                 <IoMenu />
             </button>
 
