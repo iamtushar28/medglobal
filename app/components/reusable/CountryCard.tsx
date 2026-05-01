@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 // CountryCard.tsx
 
@@ -54,9 +56,12 @@ export default function CountryCard({
                 </p>
 
                 {/* button */}
-                <button className="px-3 py-2 mt-1 text-sm text-blue-500">
+                <Link
+                    href={'/country/russia'}
+                    className="px-3 py-2 mt-1 text-sm text-blue-500 flex gap-2 items-center">
                     Explore More
-                </button>
+                    <FaArrowRightLong />
+                </Link>
             </div>
         </div>
     );
