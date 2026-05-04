@@ -4,7 +4,10 @@ import Hero from "./components/Hero";
 import Quickfacts from "./components/Quickfacts";
 import Studycost from "./components/Studycost";
 import Admissioninfo from "./components/Admissioninfo";
-
+import Faq from "./components/Faq";
+import Footer from "@/app/components/Footer";
+import Mobilecta from "@/app/components/Mobilecta";
+import Visualcta from "./components/Visualcta";
 
 export default function Home() {
     return (
@@ -23,7 +26,12 @@ export default function Home() {
                 <Quickfacts />
                 <Studycost />
                 <Admissioninfo />
+                <Faq />
+                <Visualcta />
             </div>
+
+            <Footer />
+            <Mobilecta />
 
         </>
     );

@@ -20,7 +20,7 @@ const Admissioninfo = (props: Props) => {
                     <div className='flex gap-2 items-center'>
                         {/* icon */}
                         <HiMiniCheckCircle className='text-xl text-blue-600' />
-                        <p>Minimum 60% marks in PCB in 12th</p>
+                        <p>Min 60% marks in PCB in 12th</p>
                     </div>
 
                     <div className='flex gap-2 items-center'>
@@ -32,7 +32,7 @@ const Admissioninfo = (props: Props) => {
                     <div className='flex gap-2 items-center'>
                         {/* icon */}
                         <HiMiniCheckCircle className='text-xl text-blue-600' />
-                        <p>Age must be 18 years old or above before admission</p>
+                        <p>Age must be 18 years old</p>
                     </div>
 
                     <div className='flex gap-2 items-center'>

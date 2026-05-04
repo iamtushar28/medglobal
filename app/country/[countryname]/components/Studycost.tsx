@@ -138,7 +138,7 @@ const Studycost = (props: Props) => {
 
             </div>
 
-            <p className='text-sm text-zinc-400'>* The fees may vary for some universities.</p>
+            <p className='text-sm text-zinc-400 -mt-3'>* The fees may vary for some universities.</p>
 
         </div>
     )
